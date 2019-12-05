@@ -1,0 +1,92 @@
+COMPLEX / ADVANCED / COMPOUND
+
+ - formulas -> combine slectors
+
+  * grouping
+SEL1, SEL2, SEL3 ... {
+    ...
+}  
+<style>
+p, a, li, .first, :hover{
+    color : red;
+}
+</style>
+
+
+ * direct descendant
+
+ sel1>sel2>sel3 {
+    ...
+ }
+ sel1-x sel2-x sel3-v
+
+ div>p>a>b {
+     color: red;
+ }
+
+ <div>
+ <p>AAA<a href="url"><b> AAAAA </b></a> AAAAAAA</p>
+
+
+
+  * descendant
+
+  sel1 sel 2 sel3 {
+
+  }
+div b{
+    color :red;
+}
+
+
+*intersection / combine
+
+sel1sel2sel3{
+}
+
+<ul class="first">
+<li class=first">AAAAAAAAA</li>
+</ul>
+<ul class="last">
+<li class=first">AAAAAAAAA</li>
+</ul>
+
+*next neighbour / next sibling
+
+sel1+sel2+sel3{
+ color: red;
+}
+<h2></h2>
+<p></p>
+<div></div>
+<p></p> x___
+<p></p>
+<h2></h2>
+<p></p>
+<p></p> <---
+<p></p>
+<h2></h2>
+<p></p>
+<p></p> <---
+
+ *attribute
+
+ [attribute="value] {
+
+ }
+
+ <style>
+ [width="300"] {
+     color red
+ }
+ [id="box"] {
+     color red
+ }
+
+ *universal / all
+
+ * {
+
+ }
+
+
